@@ -130,7 +130,7 @@ The file _externalsocket.c_ was adapted to make use of a UNIX socket file descri
    ```
    systemd-run
      --quiet \
-     --property OpenFile=$HOME/sock/sock:fdnametest \
+     --property OpenFile=$HOME/sockdir/sock:fdnametest \
      --user \
      --collect \
      --pipe \
@@ -145,7 +145,7 @@ The file _externalsocket.c_ was adapted to make use of a UNIX socket file descri
    ```
    *   Trying 127.0.0.1:80...
    * Could not set TCP_NODELAY: Operation not supported
-   * Connected to localhost (/sock/sock) port 80 (#0)
+   * Connected to localhost (/sockdir/sock) port 80 (#0)
    > GET / HTTP/1.1
    Host: localhost
    Accept: */*
