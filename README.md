@@ -138,6 +138,7 @@ The file _externalsocket.c_ was adapted to make use of a UNIX socket file descri
      podman \
        run \
        --rm \
+       --user 65534:65534 \
        localhost/demo /demo http://localhost
    ```
    The command outputs:
