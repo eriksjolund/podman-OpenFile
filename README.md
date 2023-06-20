@@ -1,6 +1,6 @@
 ## podman-OpenFile
 
-Demo: Use systemd directive OpenFile= to let Podman inherit a Unix socket.
+Demo: Use systemd directive OpenFile= to let Podman inherit an already connected Unix socket.
 
 The systemd directive [`OpenFile=`](https://www.freedesktop.org/software/systemd/man/systemd.service.html#OpenFile=) was introduced in __systemd 253__ (released 15 February 2023).
 
@@ -139,7 +139,7 @@ The file _externalsocket.c_ was adapted to make use of a UNIX socket file descri
        run \
        --rm \
        --user 65534:65534 \
-       localhost/demo /demo http://localhost
+       localhost/demo /demo fdnametest http://localhost
    ```
    The command outputs:
    ```
