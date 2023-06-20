@@ -143,23 +143,6 @@ The file _externalsocket.c_ was adapted to make use of a UNIX socket file descri
    ```
    The command outputs:
    ```
-   *   Trying 127.0.0.1:80...
-   * Could not set TCP_NODELAY: Operation not supported
-   * Connected to localhost (/sockdir/sock) port 80 (#0)
-   > GET / HTTP/1.1
-   Host: localhost
-   Accept: */*
-
-   * Mark bundle as not supporting multiuse
-   < HTTP/1.1 200 OK
-   < Content-Type: text/plain; charset=utf-8
-   < Server: Caddy
-   < Date: Sun, 09 Apr 2023 02:06:29 GMT
-   < Content-Length: 12
-   < 
-   * Connection #0 to host localhost left intact
-   sd_listen_fds_with_names() resulted in names[0] = fdnametest
    Hello world
-   libcurl wants to close 3 now
    ```
-   Result: Success (The web page content `Hello world` can be seen in the output).
+   and exits successfully.
