@@ -139,7 +139,7 @@ The file _externalsocket.c_ was adapted to make use of a UNIX socket file descri
        run \
        --rm \
        --user 65534:65534 \
-       localhost/demo /demo fdnametest http://localhost
+       localhost/demo fdnametest http://localhost
    ```
    The command outputs:
    ```
