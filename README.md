@@ -128,7 +128,7 @@ The file _externalsocket.c_ was adapted to make use of a UNIX socket file descri
    ```
 2. Fetch the web page as container user _nobody_
    ```
-   systemd-run
+   systemd-run \
      --quiet \
      --property OpenFile=$HOME/sockdir/sock:fdnametest \
      --user \
